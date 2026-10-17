@@ -1,0 +1,298 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090711">
+  <meta name="description" content="VIBERA INTERACTIVE SYSTEMS LIMITED is a Nigerian technology company developing social video, digital communities and creator tools.">
+  <title>VIBERA | Connect. Share. Vibe. Worldwide.</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #090711;
+      --panel: #151122;
+      --text: #f7f4ff;
+      --muted: #bcb5ce;
+      --pink: #ff36b7;
+      --purple: #9657ff;
+      --cyan: #36d9ff;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: system-ui, -apple-system, Segoe UI, sans-serif;
+      line-height: 1.7;
+    }
+    a { color: #8eeaff; }
+    header {
+      padding: 20px 7%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      border-bottom: 1px solid #30253f;
+      position: sticky;
+      top: 0;
+      background: #090711ee;
+      backdrop-filter: blur(12px);
+      z-index: 5;
+    }
+    .logo {
+      font-size: 1.65rem;
+      font-weight: 900;
+      letter-spacing: 3px;
+      background: linear-gradient(90deg, var(--pink), var(--purple), var(--cyan));
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+    nav { display: flex; flex-wrap: wrap; gap: 15px; }
+    nav a { text-decoration: none; font-size: .9rem; }
+    .hero {
+      padding: 100px 7% 90px;
+      background:
+        radial-gradient(ellipse at 15% 10%, #7d1a653b, transparent 45%),
+        radial-gradient(ellipse at 90% 40%, #4430a64b, transparent 42%);
+    }
+    .eyebrow {
+      color: #ff82d3;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-size: .8rem;
+      font-weight: 800;
+    }
+    h1 { font-size: clamp(2.6rem, 8vw, 5.7rem); line-height: 1.06; margin: 15px 0; }
+    h1 span {
+      background: linear-gradient(90deg, var(--pink), var(--purple), var(--cyan));
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+    h2 { line-height: 1.2; font-size: clamp(1.7rem, 4vw, 2.5rem); }
+    h3 { color: #f5b5ff; }
+    .lead { max-width: 700px; color: var(--muted); font-size: 1.12rem; }
+    .button {
+      display: inline-block;
+      margin-top: 18px;
+      padding: 12px 20px;
+      border-radius: 10px;
+      color: white;
+      text-decoration: none;
+      font-weight: 800;
+      background: linear-gradient(100deg, #d927a6, #7041df);
+    }
+    section { padding: 65px 7%; scroll-margin-top: 90px; }
+    .section-intro { color: var(--muted); max-width: 760px; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+      margin-top: 25px;
+    }
+    .card {
+      padding: 23px;
+      border: 1px solid #352647;
+      border-radius: 17px;
+      background: linear-gradient(145deg, #191326, #100d1a);
+    }
+    .card p, .muted { color: var(--muted); }
+    .notice {
+      border-left: 4px solid var(--pink);
+      background: #191326;
+      padding: 18px 20px;
+      border-radius: 0 12px 12px 0;
+    }
+    .company { background: #100d19; }
+    footer {
+      padding: 35px 7%;
+      border-top: 1px solid #30253f;
+      color: var(--muted);
+    }
+    footer nav { margin: 15px 0; }
+    small { color: var(--muted); }
+    @media (max-width: 600px) {
+      header { align-items: flex-start; flex-direction: column; }
+      nav { gap: 10px; }
+      .hero { padding-top: 65px; }
+    }
+  </style>
+</head>
+<body>
+<header>
+  <a class="logo" href="#home" aria-label="VIBERA home">VIBERA</a>
+  <nav aria-label="Main navigation">
+    <a href="#about">About</a>
+    <a href="#platform">Platform</a>
+    <a href="#safety">Safety</a>
+    <a href="#company">Company</a>
+    <a href="#policies">Policies</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero" id="home">
+    <div class="eyebrow">A Nigerian technology company</div>
+    <h1>Connect. Share.<br><span>Vibe. Worldwide.</span></h1>
+    <p class="lead">
+      VIBERA INTERACTIVE SYSTEMS LIMITED is developing VIBERA,
+      a social video and digital community platform designed to bring
+      people, creators and businesses together through digital experiences.
+    </p>
+    <a class="button" href="#about">Discover VIBERA</a>
+  </section>
+
+  <section id="about">
+    <div class="eyebrow">Our mission</div>
+    <h2>Technology built around people.</h2>
+    <p class="section-intro">
+      Our vision is to create an engaging, accessible and reliable digital
+      space where people can discover content, express creativity, build
+      communities and explore opportunities for digital business.
+      We aim to make online participation feel natural, useful and welcoming.
+    </p>
+  </section>
+
+  <section id="platform" class="company">
+    <div class="eyebrow">The VIBERA vision</div>
+    <h2>One platform. Different ways to connect.</h2>
+    <p class="section-intro">
+      The following are planned product areas. Availability depends on
+      development, testing, safety reviews and launch readiness.
+      Listing a feature here does not mean it is currently operational.
+    </p>
+    <div class="grid">
+      <article class="card">
+        <h3>Video discovery</h3>
+        <p>Explore short-form videos and discover new voices, ideas and interests.</p>
+      </article>
+      <article class="card">
+        <h3>Communities</h3>
+        <p>Find people with shared interests and build meaningful connections.</p>
+      </article>
+      <article class="card">
+        <h3>Creator and business tools</h3>
+        <p>Tools intended to help creators and businesses present their work and reach audiences.</p>
+      </article>
+      <article class="card">
+        <h3>LIVE experiences</h3>
+        <p>Planned live interaction features, subject to technical, rights and safety requirements.</p>
+      </article>
+      <article class="card">
+        <h3>Drama and entertainment</h3>
+        <p>A planned space for episodic storytelling and other entertainment content.</p>
+      </article>
+      <article class="card">
+        <h3>Digital opportunities</h3>
+        <p>Potential subscriptions, advertising and other clearly disclosed services as they become available.</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="safety">
+    <div class="eyebrow">Trust and responsibility</div>
+    <h2>A safer digital community matters.</h2>
+    <p class="section-intro">
+      VIBERA intends to establish rules against harassment, scams, impersonation,
+      unlawful content and violations of intellectual-property rights.
+      Safety reporting, moderation and account controls must be implemented
+      and tested before the relevant services launch.
+    </p>
+    <div class="notice">
+      Do not use a future VIBERA feature as though it is already available.
+      Before launch, the company must provide working ways to report abuse,
+      respond to complaints and enforce its published rules.
+    </div>
+  </section>
+
+  <section id="business" class="company">
+    <div class="eyebrow">Business model</div>
+    <h2>Transparent digital services.</h2>
+    <p class="section-intro">
+      Potential revenue areas include in-feed advertising, subscriptions,
+      music promotion and voluntary LIVE gifts if those features launch.
+      Any paid feature must clearly disclose its price and applicable terms
+      before a customer pays.
+    </p>
+    <p class="section-intro">
+      Creator earnings, coin conversion rates, fees, eligibility, refunds
+      and withdrawals are not offered by this website. They will require
+      separate published terms and functioning payment systems before use.
+      No earnings are guaranteed.
+    </p>
+  </section>
+
+  <section id="company">
+    <div class="eyebrow">Registered company</div>
+    <h2>VIBERA INTERACTIVE SYSTEMS LIMITED</h2>
+    <div class="card">
+      <p><strong>Registration number:</strong> RC 9943002</p>
+      <p><strong>Country:</strong> Nigeria</p>
+      <p><strong>Registration date:</strong> 16 October 2026</p>
+      <p><strong>Registered office:</strong><br>
+        JF KEN PLAZA, SHOP 10, IYIABI, ALONG IBUSA EXPRESS WAY,
+        ASABA, DELTA STATE, NIGERIA.
+      </p>
+      <p><strong>Website:</strong> realmellar.github.io</p>
+      <p><strong>Support contact:</strong> A dedicated business support channel
+        has not yet been published.</p>
+    </div>
+  </section>
+
+  <section id="policies">
+    <div class="eyebrow">Policies and customer information</div>
+    <h2>Clear terms. Responsible service.</h2>
+    <p class="section-intro">
+      These summaries are introductory information, not complete legal
+      policies. The full policies must be reviewed and published before
+      accounts, personal-data collection, paid services or user content
+      services begin operating.
+    </p>
+    <div class="grid">
+      <article class="card">
+        <h3>Privacy</h3>
+        <p>A complete privacy policy must explain what personal data is collected,
+        why it is used, how it is protected, who receives it, retention periods
+        and how users can exercise applicable privacy rights.</p>
+      </article>
+      <article class="card">
+        <h3>Terms of service</h3>
+        <p>Full terms must explain eligibility, accounts, user responsibilities,
+        intellectual property, suspensions, service availability, limitations
+        and dispute procedures.</p>
+      </article>
+      <article class="card">
+        <h3>Community guidelines</h3>
+        <p>Full guidelines must define prohibited conduct, content rules,
+        reporting procedures, moderation actions and appeal options.</p>
+      </article>
+      <article class="card">
+        <h3>Payments and refunds</h3>
+        <p>Before payments are accepted, customers must receive clear terms
+        covering prices, billing, cancellations, refund eligibility, complaints
+        and any applicable creator payout conditions.</p>
+      </article>
+    </div>
+    <p class="muted">
+      Until the complete policies and contact channels are published, this
+      website should not be treated as proof that VIBERA accounts, payments,
+      moderation tools or creator withdrawals are live.
+    </p>
+  </section>
+</main>
+
+<footer>
+  <div class="logo">VIBERA</div>
+  <p>Connect. Share. Vibe. Worldwide.</p>
+  <p>VIBERA INTERACTIVE SYSTEMS LIMITED · Nigeria · RC 9943002</p>
+  <nav aria-label="Footer navigation">
+    <a href="#about">About</a>
+    <a href="#safety">Safety</a>
+    <a href="#company">Company details</a>
+    <a href="#policies">Policies information</a>
+  </nav>
+  <small>© 2026 VIBERA INTERACTIVE SYSTEMS LIMITED. All rights reserved.</small>
+</footer>
+</body>
+</html>
